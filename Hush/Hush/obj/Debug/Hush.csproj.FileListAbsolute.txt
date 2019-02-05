@@ -1,0 +1,7 @@
+C:\Users\IEUser\Desktop\Hush\Hush\Hush\bin\Debug\Hush.exe.config
+C:\Users\IEUser\Desktop\Hush\Hush\Hush\bin\Debug\Hush.exe
+C:\Users\IEUser\Desktop\Hush\Hush\Hush\bin\Debug\Hush.pdb
+C:\Users\IEUser\Desktop\Hush\Hush\Hush\obj\Debug\Hush.csprojAssemblyReference.cache
+C:\Users\IEUser\Desktop\Hush\Hush\Hush\obj\Debug\Hush.csproj.CoreCompileInputs.cache
+C:\Users\IEUser\Desktop\Hush\Hush\Hush\obj\Debug\Hush.exe
+C:\Users\IEUser\Desktop\Hush\Hush\Hush\obj\Debug\Hush.pdb

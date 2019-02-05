@@ -1,0 +1,7 @@
+C:\Users\IEUser\Desktop\Hush\FetchCurrentUser\FetchCurrentUser\bin\Release\FetchCurrentUser.exe.config
+C:\Users\IEUser\Desktop\Hush\FetchCurrentUser\FetchCurrentUser\bin\Release\FetchCurrentUser.exe
+C:\Users\IEUser\Desktop\Hush\FetchCurrentUser\FetchCurrentUser\bin\Release\FetchCurrentUser.pdb
+C:\Users\IEUser\Desktop\Hush\FetchCurrentUser\FetchCurrentUser\obj\Release\FetchCurrentUser.csprojAssemblyReference.cache
+C:\Users\IEUser\Desktop\Hush\FetchCurrentUser\FetchCurrentUser\obj\Release\FetchCurrentUser.csproj.CoreCompileInputs.cache
+C:\Users\IEUser\Desktop\Hush\FetchCurrentUser\FetchCurrentUser\obj\Release\FetchCurrentUser.exe
+C:\Users\IEUser\Desktop\Hush\FetchCurrentUser\FetchCurrentUser\obj\Release\FetchCurrentUser.pdb

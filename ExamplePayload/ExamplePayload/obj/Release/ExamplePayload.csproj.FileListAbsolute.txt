@@ -1,0 +1,7 @@
+C:\Users\IEUser\Desktop\Hush\ExamplePayload\ExamplePayload\bin\Release\ExamplePayload.exe.config
+C:\Users\IEUser\Desktop\Hush\ExamplePayload\ExamplePayload\bin\Release\ExamplePayload.exe
+C:\Users\IEUser\Desktop\Hush\ExamplePayload\ExamplePayload\bin\Release\ExamplePayload.pdb
+C:\Users\IEUser\Desktop\Hush\ExamplePayload\ExamplePayload\obj\Release\ExamplePayload.csprojAssemblyReference.cache
+C:\Users\IEUser\Desktop\Hush\ExamplePayload\ExamplePayload\obj\Release\ExamplePayload.csproj.CoreCompileInputs.cache
+C:\Users\IEUser\Desktop\Hush\ExamplePayload\ExamplePayload\obj\Release\ExamplePayload.exe
+C:\Users\IEUser\Desktop\Hush\ExamplePayload\ExamplePayload\obj\Release\ExamplePayload.pdb
