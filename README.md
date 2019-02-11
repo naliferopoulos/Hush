@@ -5,6 +5,10 @@ Dynamic managed assembly (IL) fetch &amp; in-memory execute Command &amp; Contro
 
 Hush is run on the victim, and connects back to the HushServer, which is run on the attacker. It then proceeds to request a command from the attacker. Once the command is received, Hush requests a managed .NET assembly from the HushServer, which implements the requested command, fetches it in-memory and then proceeds to execute it, sending back the results.
 
+I made a diagram, but it sucks...
+
+![Diagram](https://github.com/naliferopoulos/Hush/blob/master/Screenshots/Hush-Framework.png)
+
 ### Great, how do I run it?
 
 Run HushServer on host, like this:
