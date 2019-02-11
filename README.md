@@ -1,18 +1,20 @@
 # Hush
 Dynamic managed assembly (IL) fetch &amp; in-memory execute PoC
 
-Manager is a simple HTTP server, for PoC use:
+Run HushServer on host, like this:
 ```
-  python -m SimpleHTTPServer 9999
+  python HushServer.py
 ```
+
+Remember that when running HushServer, any modules must be present in the working directory for them to be served.
 
 Run Hush on target, currently which payload is fetched, as well as where the manager lies is hardcoded. To be fixed.
 
 It looks like this:
 
-### Manager
+### Server
 
-![Manager](https://github.com/naliferopoulos/Hush/blob/master/Screenshots/Hush-Manager.png)
+![Server](https://github.com/naliferopoulos/Hush/blob/master/Screenshots/Hush-Server.png)
 
 ### Agent 
 
